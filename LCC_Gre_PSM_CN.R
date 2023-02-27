@@ -29,7 +29,6 @@ write.xlsx(data.frame(summ$sum.matched),"...",rowNames = TRUE)
 write.xlsx(data.frame(summ$reduction),"...",rowNames = TRUE)
 write.xlsx(data.frame(summ$nn),"...",rowNames = TRUE)
 m.data.i <- data.frame(m.out$match.matrix)
-numb <- ceiling(nrow(m.data.i)/1000000)
 m.data.i <- transform(m.data.i,pointid = rownames(m.data.i))
 
 
